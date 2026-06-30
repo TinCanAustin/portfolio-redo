@@ -2,8 +2,6 @@ import { gameImagesList } from "./gameImages";
 import { createWindow } from "./window";
 
 export function onClick(icon){
-    let value = "";
-
     function sidbarclick(val){
         const body_about = document.querySelector("#aboutme").querySelector(".content").querySelector(".mainBody");
         
@@ -73,7 +71,6 @@ export function onClick(icon){
                         <iframe data-testid="embed-iframe" style="border-radius:12px" src="https://open.spotify.com/embed/playlist/0eCmDELfKE84x3ePxEXMcd?utm_source=generator&theme=0&si=244b7bec441a4c4b" width="98%" height="320" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
                     </div>
                 `
-
                 break;
             default:
                 break;
