@@ -5,12 +5,12 @@ export class Icons {
         this.toLoad = {
             "About Me": "/icons/user.png",
             "Skills": "/icons/skills.png",
+            "Projects": "/icons/projects.png",
             "Resume": "/icons/cv.png",
             "Music": "/icons/music.png",
             "GitHub": "/icons/github.png",
             "Linkdin": "/icons/linkdin.png",
-            "Itch.io": "/placeholder.png",
-            "Projects": "/placeholder.png",
+            "Itch.io": "/icons/itch.png",
         }
     }
 
