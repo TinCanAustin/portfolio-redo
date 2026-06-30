@@ -1,0 +1,265 @@
+@font-face {
+  font-family: 'oneshot';
+  src: url('/terminus.ttf');
+}
+
+html, body {
+  -webkit-user-select: none; /* Safari */
+  -moz-user-select: none;    /* Firefox */
+  -ms-user-select: none;     /* IE/Edge */
+  user-select: none; 
+
+  overflow: hidden;
+  font-family: 'oneshot', sans-serif;
+}
+
+body {
+  background-image: url("/background.png");
+  background-size: cover;
+
+  color: white;
+}
+
+/* home page shi */
+#icons{
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-content: flex-start;
+
+  height: 95vh;
+  gap: 5vw;
+
+  position: relative;
+}
+
+.icon{
+  display: flex;
+  flex-direction: column;
+  
+  justify-content: center;
+  align-items: center;
+  
+  width: fit-content;
+  
+  padding: 3vh;
+  margin: 0;
+}
+
+.icon:hover{
+  background-color: #828080c7;
+}
+
+.icon:hover:active{
+  background-color: #303030c7;
+}
+
+#navbar{
+  position: absolute;
+  bottom: 0;
+  left: 0;
+
+  background-color: rgb(26, 26, 120);
+  width: 100vw;
+  height: 7vh;
+
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+#windows{
+  width: 12vw;
+
+  background-color: rgb(0, 0, 109);
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  font-family: 'oneshot', sans-serif;
+  font-size: 1.2rem;
+  color: white;
+
+  margin: 0.8vh 0.8vw;
+}
+
+#tabs{
+  width: 100%;
+}
+
+#time{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  font-size: 1.5rem;
+  margin: 0.8vh 0.8vw;
+
+  width: fit-content;
+}
+
+
+/* content stuff */
+.windowPage{
+  position: absolute;
+  left: 10%;
+  top: 10%;
+  
+  background-color: #07001b;
+
+  width: 80vw;
+  height: 80vh;
+
+  border: rgb(0, 0, 109) 5px solid;
+
+  margin: 0;
+
+  min-width: 50vw;
+  min-height: 60vh;
+ 
+
+  resize: both;
+  overflow: hidden;
+  box-sizing: border-box;
+}
+
+.header{
+  width: 100%;
+  border-bottom: rgb(0, 0, 109) 5px solid;
+  height: 10%;
+  
+  display: flex;
+  justify-content: space-between; 
+  box-sizing: border-box;
+  flex-shrink: 0;
+}
+
+.exit{
+  height: 100%;
+  width: 4%;
+
+  float: right;
+
+  border-left: rgb(0, 0, 109) 5px solid;
+}
+.exit > a{
+  width: 100%;
+  height: 100%;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  font-size: 1.2em;
+  cursor: pointer;
+}
+
+.title{
+  margin-left: 2vw;
+  font-size: 1.5em;
+  letter-spacing: 0.3vw;
+
+  display: flex;
+  align-items: center;
+}
+
+.content{
+  width: 100%;
+
+  flex-grow: 1;
+  height: 100%;
+
+  overflow: hidden;
+
+  display: flex;
+  flex-direction: row;
+  
+  box-sizing: border-box;
+}
+
+.sidebar{
+  height: 100%;
+  width: 15%;
+  flex-shrink: 0;  
+  
+  display: flex;
+  flex-direction: column;
+
+  border-right: rgb(0, 0, 109) 5px solid;
+}
+.sidebar > a{
+  padding: 2vh;
+  text-align: center;
+  font-size: 1.2em;
+  border-bottom: rgb(0, 0, 109) 5px solid;
+  cursor: pointer;
+}
+.sidebar > a:hover{
+  background-color: white;
+  color:#07001b;
+}
+
+.mainBody{
+  flex-grow: 1;
+  height: 100%;
+  overflow-y: auto;
+  overflow-x: hidden;
+  box-sizing: border-box;
+  margin: 1vh 1vw;
+}
+
+.intro > div {
+  display: flex;
+  justify-content: space-between;
+
+  width: 100%;
+  margin: auto auto;
+}
+.intro > div > div{
+  width: 70%;
+  font-size: 1.3em;
+}
+.intro > div > img{
+  height: 55vh;
+}
+
+.plans > div > h1{
+  font-size: 2.2em;
+}
+.plans > div > ul > li{
+  margin: 2vh 0;
+  font-size: 1.2em;
+}
+
+@keyframes scroll {
+  from{
+    transform: translateX(0);
+  }to{
+    transform: translateX(-50%);
+  }
+  
+}
+
+.mainBody.more {
+  overflow: hidden;
+}
+
+.gameHolder{
+  width: 100%;
+  position: relative;
+}
+.games{
+  display: flex;
+  gap: 15px;
+  width: max-content;
+  animation: scroll 32s linear infinite;
+}
+#music > iframe{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.more > div > h2{
+  font-size: 2em;
+}
