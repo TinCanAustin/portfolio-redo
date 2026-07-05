@@ -263,3 +263,20 @@ body {
 .more > div > h2{
   font-size: 2em;
 }
+
+#skill > .content{
+  margin: 1vh 1vw;
+  display: flex;
+  flex-direction: column;
+  box-sizing: border-box;
+  width: 97%;
+}
+#skill > .content > .tail {
+  width: 100%;
+  text-align: end;
+}
+#skill > .content > .skl_img{
+  display: flex;
+  justify-content: space-between;
+  padding: 0 5vw;
+}

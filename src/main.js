@@ -30,8 +30,6 @@ time.innerHTML = `
 `;
 navBad.appendChild(time);
 
-
-
 root.appendChild(icon_container);
 root.appendChild(navBad);
 

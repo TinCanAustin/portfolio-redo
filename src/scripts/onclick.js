@@ -1,7 +1,7 @@
-import { gameImagesList } from "./gameImages";
+import { gameImagesList, LangageImageList, ToolsImageList } from "./gameImages";
 import { createWindow } from "./window";
 
-export function onClick(icon){
+export function onClick(icon, tabManager){
     function sidbarclick(val){
         const body_about = document.querySelector("#aboutme").querySelector(".content").querySelector(".mainBody");
         
@@ -118,6 +118,57 @@ export function onClick(icon){
 
                 const title_skill = document.querySelector("#skill").querySelector(".title").querySelector("p");
                 title_skill.textContent = "Skill";
+
+                const content_skill = document.querySelector("#skill").querySelector(".content");
+
+                content_skill.innerHTML = `
+                    <div class="head">
+                        <h2>< Languages ></h2>
+                    </div>
+                `;
+
+                const languageImage = LangageImageList.images;
+
+                const imageContainer_1 = document.createElement("div");
+                imageContainer_1.className = "skl_img"
+                languageImage.forEach(img => {
+                    imageContainer_1.appendChild(img);
+                });
+                content_skill.appendChild(imageContainer_1);
+
+                content_skill.innerHTML += `
+                    <div class="tail">
+                        <h2>< /Languages ></h2>
+                    </div>
+                    <div class="head">
+                        <h2>< Tools ></h2>
+                    </div>
+                `;
+
+                const toolsImage = ToolsImageList.images;
+
+                const imageContainer_2 = document.createElement("div");
+                imageContainer_2.className = "skl_img";
+                toolsImage.forEach(img => {
+                    imageContainer_2.appendChild(img);
+                });
+                content_skill.appendChild(imageContainer_2);
+
+                content_skill.innerHTML += `
+                    <div class="tail">
+                        <h2>< /Tools ></h2>
+                    </div>
+                `
+
+                break;
+            case "Projects":
+                createWindow("app", "projects");
+
+                const title_project = document.querySelector("#projects").querySelector(".title").querySelector("p");
+                title_project.textContent = "Projects";
+
+                const content_project = document.querySelector("#projects").querySelector(".content");
+
                 break;
             case "Resume":
                 const link = document.createElement('a');
