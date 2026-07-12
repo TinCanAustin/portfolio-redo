@@ -280,3 +280,47 @@ body {
   justify-content: space-between;
   padding: 0 5vw;
 }
+
+#projects{
+  height: 100%;
+}
+.project_viewer {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  border-top: 1px solid #444;
+  border-bottom: 1px solid #444;
+}
+
+.prj_cont {
+  width: 100%;
+}
+
+.prj_footer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 16px;
+  padding: 14px 0;
+  border-top: 1px solid #444;
+}
+
+.prj_arrow {
+  background: transparent;
+  border: 1px solid #555;
+  color: white;
+  padding: 6px 14px;
+  cursor: pointer;
+  font-size: 1rem;
+}
+
+.prj_arrow:hover {
+  background: #222;
+}
+
+.prj_tracker {
+  margin: 0;
+  min-width: 60px;
+  text-align: center;
+  color: #ccc;
+}

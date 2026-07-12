@@ -17,6 +17,9 @@ windowButton.id = "windows";
 windowButton.innerHTML = `
   <p>Austin Philip</p>
 `;
+windowButton.onclick = ()=>{  
+  window.open("https://github.com/TinCanAustin/portfolio-redo", "_blank");
+}
 navBad.appendChild(windowButton);
 
 const tabs = document.createElement("div");

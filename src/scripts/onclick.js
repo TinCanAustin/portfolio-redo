@@ -1,5 +1,6 @@
-import { gameImagesList, LangageImageList, ToolsImageList } from "./gameImages";
+import { gameImagesList, LangageImageList, ToolsImageList } from "./imageManager";
 import { createWindow } from "./window";
+import projects from '../misc/projects.json';
 
 export function onClick(icon, tabManager){
     function sidbarclick(val){
@@ -168,6 +169,35 @@ export function onClick(icon, tabManager){
                 title_project.textContent = "Projects";
 
                 const content_project = document.querySelector("#projects").querySelector(".content");
+
+
+                const projectViewer = document.createElement("div");
+                projectViewer.className = "prj_view";
+
+                const projectBody = document.createElement("div");
+                projectBody.className = "prj_cont";
+
+                const projectFooter = document.createElement("div");
+                projectFooter.className = "prj_footer";
+
+                const leftArrow = document.createElement("button");
+                leftArrow.className = "prj_arrow";
+                leftArrow.textContent = "<";
+
+                const rightArrow = document.createElement("button");
+                leftArrow.className = "prj_arrow";
+                leftArrow.textContent = ">";   
+
+                const tracker = document.createElement("p");
+                tracker.className = "prj_tracker";
+                
+                projectFooter.appendChild(leftArrow);
+                projectFooter.appendChild(tracker);
+                projectFooter.appendChild(rightArrow);
+
+                projectViewer.appendChild(projectBody);
+                projectViewer.appendChild(projectFooter);
+                content_project.appendChild(projectViewer);
 
                 break;
             case "Resume":
