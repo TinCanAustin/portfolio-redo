@@ -170,6 +170,7 @@ export function onClick(icon, tabManager){
 
                 const content_project = document.querySelector("#projects").querySelector(".content");
 
+                let proj_index = 0;
 
                 const projectViewer = document.createElement("div");
                 projectViewer.className = "prj_view";
@@ -185,8 +186,8 @@ export function onClick(icon, tabManager){
                 leftArrow.textContent = "<";
 
                 const rightArrow = document.createElement("button");
-                leftArrow.className = "prj_arrow";
-                leftArrow.textContent = ">";   
+                rightArrow.className = "prj_arrow";
+                rightArrow.textContent = ">";   
 
                 const tracker = document.createElement("p");
                 tracker.className = "prj_tracker";
@@ -198,6 +199,54 @@ export function onClick(icon, tabManager){
                 projectViewer.appendChild(projectBody);
                 projectViewer.appendChild(projectFooter);
                 content_project.appendChild(projectViewer);
+
+                function renderProject(index){
+                    const proj = projects[index];
+
+                    console.log(proj);
+                    projectBody.innerHTML = '';
+
+                    const wrapper = document.createElement("div");
+                    wrapper.className = proj.hasImg ? "prj_item _img" : "prj_item _noimg";
+
+                    const textCol = document.createElement("div");
+                    textCol.className = "prj_text";
+
+                    const name = document.createElement("h3");
+                    name.className = "prj_name";
+                    name.textContent = proj.title;
+
+                    const desc = document.createElement("p");
+                    desc.className = "prj_desc";
+                    desc.textContent = proj.description || "";
+
+                    textCol.appendChild(name);
+                    textCol.appendChild(desc);
+                    wrapper.appendChild(textCol);
+
+                    if (proj.hasImg && proj.imgLink) {
+                        /*impliment img*/
+                    }
+
+                    projectBody.appendChild(wrapper);
+                    
+                    tracker.textContent = `${index + 1} / ${projects.length}`;
+                }
+
+                const prev_press = () => {
+                    proj_index = (proj_index - 1 + projects.length) % projects.length;
+                    renderProject(proj_index);
+                };
+
+                const next_press = () => {
+                    proj_index = (proj_index + 1) % projects.length;
+                    renderProject(proj_index);
+                };
+
+                leftArrow.addEventListener("click", prev_press);
+                rightArrow.addEventListener("click", next_press);
+
+                renderProject(proj_index);
 
                 break;
             case "Resume":

@@ -281,46 +281,47 @@ body {
   padding: 0 5vw;
 }
 
-#projects{
-  height: 100%;
-}
-.project_viewer {
+
+.prj_view{
   width: 100%;
+  height: 90%;
   display: flex;
   flex-direction: column;
-  border-top: 1px solid #444;
-  border-bottom: 1px solid #444;
 }
 
 .prj_cont {
-  width: 100%;
+  width: 95%;
+  height: 100%;
+
+  margin: 0.5vh 1vw;
 }
 
-.prj_footer {
+.prj_text{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 10px;
+  flex: 1;
+  min-width: 0;
+}
+
+.prj_name {
+  font-size: 2rem;
+  font-weight: 600;
+  padding-bottom: 10px;
+  border-bottom: 1px solid #666;
+}
+
+.prj_desc {
+  margin: 0;
+  line-height: 1.5;
+  color: #ddd;
+}
+
+.prj_footer{
   display: flex;
   align-items: center;
   justify-content: center;
   gap: 16px;
-  padding: 14px 0;
-  border-top: 1px solid #444;
-}
-
-.prj_arrow {
-  background: transparent;
-  border: 1px solid #555;
-  color: white;
-  padding: 6px 14px;
-  cursor: pointer;
-  font-size: 1rem;
-}
-
-.prj_arrow:hover {
-  background: #222;
-}
-
-.prj_tracker {
-  margin: 0;
-  min-width: 60px;
-  text-align: center;
-  color: #ccc;
+  padding: 14px 0px;
 }

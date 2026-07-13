@@ -1,42 +1,49 @@
 [
     {
         "title": "Predictive Research Estimating Heart Disease",
-        "discription": "Developed an interpretable machine learning pipeline in Python to predict heart disease risk, leveraging pandas and scikit-learn for data preprocessing and classification, while using SHAP and feature importance techniques to provide transparent, explainable clinical predictions.",
+        "description": "Developed an interpretable machine learning pipeline in Python to predict heart disease risk, leveraging pandas and scikit-learn for data preprocessing and classification, while using SHAP and feature importance techniques to provide transparent, explainable clinical predictions.",
         "hasImg": false
     },
     {
         "title": "Custom ESP32 Macropad",
-        "discription": "Designed and programmed a custom ESP32-based macro pad, creating a fabrication-ready PCB in KiCad with USB-C connectivity and developing Arduino-ESP32 firmware for low-latency USB HID key emulation, real-time switch scanning, and programmable macro layers.",
+        "description": "Designed and programmed a custom ESP32-based macro pad, creating a fabrication-ready PCB in KiCad with USB-C connectivity and developing Arduino-ESP32 firmware for low-latency USB HID key emulation, real-time switch scanning, and programmable macro layers.",
+        "hasImg": false,
         "imgLink": ""
     },
     {
         "title": "Triangle Sound Play",
-        "discription": "I created this website to learn how to use JavaScript's AudioContext module. It's a simple site that lets you play triangle waves within a single octave.",
+        "description": "I created this website to learn how to use JavaScript's AudioContext module. It's a simple site that lets you play triangle waves within a single octave.",
+        "hasImg": false,
         "imgLink": ""
     },
     {
         "title": "NeuraXtension Website Backend ",
-        "discription": "A scalable REST API built for the SFU NeuraXtension Club website, providing secure endpoints for managing events, announcements, and other club content while serving as the backend for the club's web application.",
+        "description": "A scalable REST API built for the SFU NeuraXtension Club website, providing secure endpoints for managing events, announcements, and other club content while serving as the backend for the club's web application.",
+        "hasImg": false,
         "imgLink": ""
     },
     {
         "title": "Way Trace",
-        "discription": "Way Trace was a concept app I developed for a small company called 8px. It was designed for parents and schools to track school bus locations in real-time. The app was never green-lit, so it is not currently available for general purposes.",
+        "description": "Way Trace was a concept app I developed for a small company called 8px. It was designed for parents and schools to track school bus locations in real-time. The app was never green-lit, so it is not currently available for general purposes.",
+        "hasImg": false,
         "imgLink": ""
     },
     {
         "title": "Save Water App",
-        "discription": "The \"Save Water App\" was developed as a part of the 'Hold That Drop' Initiative at Abu Dhabi Indian School Al-Muroor. I was one of the initial lead developers of this app, working alongside another student on my team. The app tracks students' water usage and provides suggestions on how they can optimize their consumption. The app is currently of the play store for further development by the current team.",
+        "description": "The \"Save Water App\" was developed as a part of the 'Hold That Drop' Initiative at Abu Dhabi Indian School Al-Muroor. I was one of the initial lead developers of this app, working alongside another student on my team. The app tracks students' water usage and provides suggestions on how they can optimize their consumption. The app is currently of the play store for further development by the current team.",
+        "hasImg": false,
         "imgLink": ""
     },
     {
         "title": "My DormChatroom",
-        "discription": "Developed a real-time desktop chat application for a 25+ user dormitory community, featuring a responsive wxWidgets interface and an AWS-hosted TCP server that supported 20+ concurrent users with low-latency messaging and automatic client connections.",
+        "description": "Developed a real-time desktop chat application for a 25+ user dormitory community, featuring a responsive wxWidgets interface and an AWS-hosted TCP server that supported 20+ concurrent users with low-latency messaging and automatic client connections.",
+        "hasImg": false,
         "imgLink": ""
     },
     {
         "title": "Pet Migu",
-        "discription": "Pet Migu is a desktop app built with Python that places a small Miku on your screen while you work, play games, or do nothing. It was a fun side project I created for time-pass while working at 8px.",
+        "description": "Pet Migu is a desktop app built with Python that places a small Miku on your screen while you work, play games, or do nothing. It was a fun side project I created for time-pass while working at 8px.",
+        "hasImg": false,
         "imgLink": ""
     }
 ]
