@@ -9,8 +9,8 @@ export class Icons {
             "Resume": "/icons/cv.png",
             "Music": "/icons/music.png",
             "GitHub": "/icons/github.png",
-            "Linkdin": "/icons/linkdin.png",
-            "Itch.io": "/icons/itch.png",
+            "LinkdIn": "/icons/linkdin.png",
+            "itch.io": "/icons/itch.png",
         }
     }
 
