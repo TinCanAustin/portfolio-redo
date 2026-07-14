@@ -1,6 +1,12 @@
 import { re_move } from "./move";
 
 export function createWindow(root, id){
+    const existing  = document.getElementById(id);
+    if(existing){
+        existing.style.zIndex = String(Date.now());
+        return existing;
+    }
+
     const page = document.createElement("div");
     page.className = "windowPage";
     page.id = id;
