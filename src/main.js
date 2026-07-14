@@ -2,9 +2,13 @@ import { Icons } from './scripts/icons'
 import { move } from './scripts/move';
 import { onClick } from './scripts/onclick';
 import { updateTime } from './scripts/time';
+import { checkScreen } from './scripts/warning';
 import './style.css'
 
 const root = document.querySelector("#app");
+
+checkScreen();
+window.addEventListener("resize", checkScreen);
 
 const icon_container = document.createElement("div");
 icon_container.id = "icons"

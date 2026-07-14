@@ -2,7 +2,7 @@ import { gameImagesList, LangageImageList, ToolsImageList } from "./imageManager
 import { createWindow } from "./window";
 import projects from '../misc/projects.json';
 
-export function onClick(icon, tabManager){
+export function onClick(icon){
     function sidbarclick(val){
         const body_about = document.querySelector("#aboutme").querySelector(".content").querySelector(".mainBody");
         
