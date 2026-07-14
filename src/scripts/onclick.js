@@ -118,7 +118,7 @@ export function onClick(icon){
                 createWindow("app", "skill");
 
                 const title_skill = document.querySelector("#skill").querySelector(".title").querySelector("p");
-                title_skill.textContent = "Skill";
+                title_skill.textContent = "Skills";
 
                 const content_skill = document.querySelector("#skill").querySelector(".content");
 
