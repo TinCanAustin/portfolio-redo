@@ -9,8 +9,8 @@
     {
         "title": "Custom ESP32 Macropad",
         "description": "Designed and programmed a custom ESP32-based macro pad, creating a fabrication-ready PCB in KiCad with USB-C connectivity and developing Arduino-ESP32 firmware for low-latency USB HID key emulation, real-time switch scanning, and programmable macro layers.",
-        "hasImg": false,
-        "imgLink": "",
+        "hasImg": true,
+        "imgLink": "/proj/macropad_pcb.png",
         "links": ["https://github.com/TinCanAustin/SFU-MK-Macropad"]
     },
     {
@@ -51,15 +51,15 @@
     {
         "title": "The Scuffed Dongen Game",
         "description": "A fast-paced dungeon crawler built with the Godot Engine where procedurally generated monsters create a unique challenge every run. Defeat enemies, earn points, and survive as long as possible while chasing the highest score.",
-        "hasImg": false,
-        "imgLink": "",
+        "hasImg": true,
+        "imgLink": "/proj/game1.png",
         "links": ["https://github.com/TinCanAustin/ScuffedDongenGame", "https://tincanaustin.itch.io/scuffed-dongen-game"]
     },
     {
         "title": "Rocket Physics Engine",
         "description": "An interactive Unity space simulation where players explore the effects of gravity by placing planets and observing how their combined gravitational pull influences a rocket's trajectory. Experiment with different planetary arrangements to create unique orbital paths and discover the physics behind spaceflight.",
-        "hasImg": false,
-        "imgLink": "",
+        "hasImg": true,
+        "imgLink": "/proj/game2.png",
         "links": ["https://tincanaustin.itch.io/rocket-physics-engine"]
     },
     {

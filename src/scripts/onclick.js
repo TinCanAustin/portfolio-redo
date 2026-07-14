@@ -287,7 +287,6 @@ export function onClick(icon, tabManager){
 
                 break;
             case "Music":
-                console.log("yes");
                 window.open("https://www.youtube.com/@TinCan420", "_blank");
                 break;
             case "GitHub":

@@ -293,6 +293,11 @@ body {
 
 .prj_item{
   display: flex;
+  height: 100%;
+}
+
+.prj_item._noimg{
+  flex-direction: column;
 }
 
 .prj_cont {
@@ -304,13 +309,15 @@ body {
 .prj_text{
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: flex-start;
+  align-items: stretch;
   gap: 10px;
   flex: 1;
   min-width: 0;
 }
 
 .prj_name {
+  width: 100%;
   font-size: 2rem;
   font-weight: 600;
   padding-bottom: 10px;
@@ -325,20 +332,22 @@ body {
 }
 
 .prj_img_cont{
-  width: 240px;
+  width: 35%;
   min-width: 240px;
+  flex-shrink: 0;
   display: flex;
   align-items: center;
   justify-content: center;
   border-left: 1px solid #444;
   padding-left: 20px;
+  box-sizing: border-box;
 }
 
 .prj_img{
   width: 100%;
   height: auto;
   display: block;
-  object-fit: cover;
+  object-fit: contain;
 }
 
 .prj_footer{
@@ -347,4 +356,12 @@ body {
   justify-content: center;
   gap: 16px;
   padding: 14px 0px;
+}
+
+.prj_link{
+  padding: 5vh 0vw;
+  font-size: 1.1rem;
+}
+.prj_link > a{
+  color: white;
 }
