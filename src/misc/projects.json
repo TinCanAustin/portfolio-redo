@@ -2,48 +2,71 @@
     {
         "title": "Predictive Research Estimating Heart Disease",
         "description": "Developed an interpretable machine learning pipeline in Python to predict heart disease risk, leveraging pandas and scikit-learn for data preprocessing and classification, while using SHAP and feature importance techniques to provide transparent, explainable clinical predictions.",
-        "hasImg": false
+        "hasImg": false,
+        "imgLink": "",
+        "links":["https://github.com/sfu-cmpt340/2026_1_project_04"]
     },
     {
         "title": "Custom ESP32 Macropad",
         "description": "Designed and programmed a custom ESP32-based macro pad, creating a fabrication-ready PCB in KiCad with USB-C connectivity and developing Arduino-ESP32 firmware for low-latency USB HID key emulation, real-time switch scanning, and programmable macro layers.",
         "hasImg": false,
-        "imgLink": ""
+        "imgLink": "",
+        "links": ["https://github.com/TinCanAustin/SFU-MK-Macropad"]
     },
     {
         "title": "Triangle Sound Play",
         "description": "I created this website to learn how to use JavaScript's AudioContext module. It's a simple site that lets you play triangle waves within a single octave.",
-        "hasImg": false,
-        "imgLink": ""
+        "hasImg": true,
+        "imgLink": "/proj/TriangleSound.png",
+        "links": ["https://github.com/TinCanAustin/TriangleSoundPlay"]
     },
     {
         "title": "NeuraXtension Website Backend ",
         "description": "A scalable REST API built for the SFU NeuraXtension Club website, providing secure endpoints for managing events, announcements, and other club content while serving as the backend for the club's web application.",
         "hasImg": false,
-        "imgLink": ""
+        "imgLink": "",
+        "links": ["https://github.com/TinCanAustin/NeuroscienceClubBackend"]
     },
     {
         "title": "Way Trace",
         "description": "Way Trace was a concept app I developed for a small company called 8px. It was designed for parents and schools to track school bus locations in real-time. The app was never green-lit, so it is not currently available for general purposes.",
         "hasImg": false,
-        "imgLink": ""
+        "imgLink": "",
+        "links": []
     },
     {
         "title": "Save Water App",
         "description": "The \"Save Water App\" was developed as a part of the 'Hold That Drop' Initiative at Abu Dhabi Indian School Al-Muroor. I was one of the initial lead developers of this app, working alongside another student on my team. The app tracks students' water usage and provides suggestions on how they can optimize their consumption. The app is currently of the play store for further development by the current team.",
         "hasImg": false,
-        "imgLink": ""
+        "imgLink": "",
+        "links": []
     },
     {
         "title": "My DormChatroom",
         "description": "Developed a real-time desktop chat application for a 25+ user dormitory community, featuring a responsive wxWidgets interface and an AWS-hosted TCP server that supported 20+ concurrent users with low-latency messaging and automatic client connections.",
         "hasImg": false,
-        "imgLink": ""
+        "imgLink": "",
+        "links": []
+    },
+    {
+        "title": "The Scuffed Dongen Game",
+        "description": "A fast-paced dungeon crawler built with the Godot Engine where procedurally generated monsters create a unique challenge every run. Defeat enemies, earn points, and survive as long as possible while chasing the highest score.",
+        "hasImg": false,
+        "imgLink": "",
+        "links": ["https://github.com/TinCanAustin/ScuffedDongenGame", "https://tincanaustin.itch.io/scuffed-dongen-game"]
+    },
+    {
+        "title": "Rocket Physics Engine",
+        "description": "An interactive Unity space simulation where players explore the effects of gravity by placing planets and observing how their combined gravitational pull influences a rocket's trajectory. Experiment with different planetary arrangements to create unique orbital paths and discover the physics behind spaceflight.",
+        "hasImg": false,
+        "imgLink": "",
+        "links": ["https://tincanaustin.itch.io/rocket-physics-engine"]
     },
     {
         "title": "Pet Migu",
         "description": "Pet Migu is a desktop app built with Python that places a small Miku on your screen while you work, play games, or do nothing. It was a fun side project I created for time-pass while working at 8px.",
         "hasImg": false,
-        "imgLink": ""
+        "imgLink": "",
+        "links": ["https://github.com/TinCanAustin/petMigu"]
     }
 ]

@@ -222,10 +222,36 @@ export function onClick(icon, tabManager){
 
                     textCol.appendChild(name);
                     textCol.appendChild(desc);
+
+                    if(proj.links.length != 0){
+                        const links = document.createElement("div");
+                        links.className = "prj_link";
+
+                        proj.links.forEach(e=>{
+                            const link = document.createElement("a");
+                            link.href = e;
+                            link.innerHTML = `${e}`;
+                            
+                            links.appendChild(link);
+                        });
+                        
+                        textCol.appendChild(links);
+                    }
+
                     wrapper.appendChild(textCol);
 
                     if (proj.hasImg && proj.imgLink) {
-                        /*impliment img*/
+                        const imgWrap = document.createElement("div");
+                        imgWrap.className = "prj_img_cont";
+
+                        const img = document.createElement("img");
+                        img.className = "prj_img";
+
+                        img.src = proj.imgLink;
+                        img.alt = proj.title;
+
+                        imgWrap.appendChild(img);
+                        wrapper.appendChild(imgWrap);
                     }
 
                     projectBody.appendChild(wrapper);
