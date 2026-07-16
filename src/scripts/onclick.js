@@ -292,10 +292,10 @@ export function onClick(icon){
             case "GitHub":
                 window.open("https://github.com/TinCanAustin", "_blank");
                 break;
-            case "Linkdin":
+            case "LinkdIn":
                 window.open("https://www.linkedin.com/in/austin-philip-1a0493324/", "_blank");
                 break;
-            case "Itch.io":
+            case "itch.io":
                 window.open("https://tincanaustin.itch.io/", "_blank");
                 break;
             default:
